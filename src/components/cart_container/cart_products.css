@@ -1,0 +1,13 @@
+.cart-products{
+    /* border: 2px solid sandybrown; */
+    width: 33%;
+    padding: 15px;
+}
+
+.cart-product-cart{
+    border: 2px solid slateblue ;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #303030;
+}

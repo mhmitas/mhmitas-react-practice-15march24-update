@@ -8,6 +8,8 @@ function App() {
   const [cartCount, setCartCount] = useState(0)
   const [cartProducts, setCartProducts] = useState([])
 
+
+
   function handleAddToCart(laptop) {
     const updateCart = cartCount + 1;
     setCartCount(updateCart)
@@ -15,7 +17,6 @@ function App() {
     setCartProducts(updateCartProducts)
 
   }
-
 
   return (
     <>

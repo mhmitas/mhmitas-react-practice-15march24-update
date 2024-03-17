@@ -3,24 +3,33 @@ import { useState } from 'react';
 import './product.css'
 
 export default function Product({ laptop, handleAddToCart }) {
-    const { name, brand, price, processor, ram } = laptop;
+    const { modelName, brand, price, processor, ram, ssd, productImage } = laptop;
 
-    const [isClicked, setIsClicked] = useState()
+    const [isClicked, setIsClicked] = useState(false)
+    const handleclick = () => {
+        setIsClicked(!isClicked)
+        // handleAddToCart(laptop)
+    }
 
     return (
         <div className="product">
             <div>
-                <h3>Brand: {brand}</h3>
-                <h3>Model: {name}</h3>
-                <h3>Processor: {processor}</h3>
-                <h3>Ram: {ram}</h3>
-                <h3>Price: {price}</h3>
+                <div>
+                    <img className='product-img' src={productImage} alt="" />
+                </div>
+                <h3>Model: {modelName}</h3>
+                <p>Brand: {brand}</p>
+                <p>Processor: {processor}</p>
+                <p>Memory: {ram}</p>
+                <p>storage: {ssd}</p>
+                <p>Price: {price}</p>
             </div>
             <button
                 className='add-to-cart-btn'
                 onClick={() => handleAddToCart(laptop)}
             >Add to cart</button><br /><br />
-            <button>Problem</button>
+            {/* <button onClick={handleclick}>Problem</button>
+            <p>{isClicked && 'clicked'}</p> */}
 
         </div>
     )

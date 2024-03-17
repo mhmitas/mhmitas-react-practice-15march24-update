@@ -1,5 +1,4 @@
 
-
 .product{
     border: 2px solid slateblue;
     padding: 15px;
@@ -22,4 +21,10 @@ button {
     background-color: slateblue;
     font-weight: bold;
     color: whitesmoke;
+}
+
+.product-img{
+    width: 100%;
+    border-radius: 8px;
+    max-width: 400px;
 }

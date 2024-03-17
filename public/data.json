@@ -1,0 +1,47 @@
+[
+    {
+        "modelName": "MacBook Air M2",
+        "brand": "Apple",
+        "price": 1199.00,
+        "processor": "Apple M2 chip",
+        "ram": "8GB Unified Memory",
+        "ssd": "256GB SSD",
+        "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mba13-midnight-select-202402?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1708367688034"
+    },
+    {
+        "modelName": "MacBook Pro 14 (M1 Pro)",
+        "brand": "Apple",
+        "price": 1999.00,
+        "processor": "Apple M1 Pro chip",
+        "ram": "16GB Unified Memory",
+        "ssd": "512GB SSD",
+        "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830241"
+    },
+    {
+        "modelName": "MacBook Pro 16 (M1 Max)",
+        "brand": "Apple",
+        "price": 3499.00,
+        "processor": "Apple M1 Max chip",
+        "ram": "32GB Unified Memory",
+        "ssd": "1TB SSD",
+        "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp16-spaceblack-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290"
+    },
+    {
+        "modelName": "Mac mini M2",
+        "brand": "Apple",
+        "price": 699.00,
+        "processor": "Apple M2 chip",
+        "ram": "8GB Unified Memory",
+        "ssd": "256GB SSD",
+        "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mac-mini-hero-202301?wid=820&hei=286&fmt=jpeg&qlt=90&.v=1670038314708"
+    },
+    {
+        "modelName": "13-inch MacBook Pro (M2)",
+        "brand": "Apple",
+        "price": 1299.00,
+        "processor": "Apple M2 chip",
+        "ram": "8GB Unified Memory",
+        "ssd": "512GB SSD",
+        "productImage": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/mbp14-silver-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697230830269"
+    }
+]

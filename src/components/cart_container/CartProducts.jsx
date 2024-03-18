@@ -1,7 +1,7 @@
 import CartProduct from './CartProduct'
 import './cart_products.css'
 
-function CartProducts({ cartProducts }) {
+function CartProducts({ cartProducts, handleDelete, total }) {
     // console.log(cartProducts)
 
     return (
@@ -22,10 +22,17 @@ function CartProducts({ cartProducts }) {
                             (cartProduct, idx) => <CartProduct
                                 key={idx}
                                 cartProduct={cartProduct}
+                                handleDelete={handleDelete}
                             ></CartProduct>
                         )
                     }
                 </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <th colSpan={'2'}>{total}</th>
+                    </tr>
+                </tfoot>
             </table>
 
         </div>

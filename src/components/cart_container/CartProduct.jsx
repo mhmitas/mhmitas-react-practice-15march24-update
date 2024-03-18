@@ -1,6 +1,6 @@
 import { FaTrash } from "react-icons/fa";
 
-function CartProduct({ cartProduct }) {
+function CartProduct({ cartProduct, handleDelete }) {
     const { brand, modelName, price, productImage } = cartProduct
 
     return (
@@ -13,7 +13,7 @@ function CartProduct({ cartProduct }) {
             </td>
             <td>${price}</td>
             <td>
-                <div className="btn2">
+                <div onClick={()=>handleDelete(cartProduct)} className="btn2">
                     <FaTrash></FaTrash>
                 </div>
             </td>

@@ -12,25 +12,20 @@ export default function Product({ laptop, handleAddToCart }) {
     }
 
     return (
-        <div className="product">
+        <div className="product space-y-2">
             <div>
-                <div>
-                    <img className='product-img' src={productImage} alt="" />
-                </div>
-                <h3>Model: {modelName}</h3>
-                <p>Brand: {brand}</p>
-                <p>Processor: {processor}</p>
-                <p>Memory: {ram}</p>
-                <p>storage: {ssd}</p>
-                <p>Price: {price}</p>
+                <img className='product-img' src={productImage} alt="" />
             </div>
+            <h3>Model: {modelName}</h3>
+            <p>Brand: {brand}</p>
+            <p>Processor: {processor}</p>
+            <p>Memory: {ram}</p>
+            <p>storage: {ssd}</p>
+            <p>Price: {price}</p>
             <button
                 className='add-to-cart-btn'
                 onClick={() => handleAddToCart(laptop)}
             >Add to cart</button><br /><br />
-            {/* <button onClick={handleclick}>Problem</button>
-            <p>{isClicked && 'clicked'}</p> */}
-
         </div>
     )
 }

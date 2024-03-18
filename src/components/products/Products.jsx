@@ -3,7 +3,7 @@ import Product from "./Product"
 import { useEffect, useState } from 'react'
 
 
-export default function Products({ handleAddToCart,}) {
+export default function Products({ handleAddToCart, }) {
 
     const [laptops, setLaptops] = useState([])
     useEffect(() => {
@@ -14,7 +14,7 @@ export default function Products({ handleAddToCart,}) {
     // console.log(laptops)
 
     return (
-        <div className="product-container">
+        <div className="product-container border border-white grid md:grid-cols-3 gap-2 ">
             {
                 laptops.map(
                     (laptop, idx) => <Product

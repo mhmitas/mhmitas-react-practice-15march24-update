@@ -1,15 +1,23 @@
+import { FaTrash } from "react-icons/fa";
+
 function CartProduct({ cartProduct }) {
-    const { brand, name, price } = cartProduct
+    const { brand, modelName, price, productImage } = cartProduct
 
     return (
-        <div className="cart-product-cart">
-            <div>
-                <p>{brand} {name}</p>
-            </div>
-            <div>
-                <p>BDT {price}</p>
-            </div>
-        </div>
+        <tr className="">
+            <td className="flex gap-2 items-center">
+                <img className="w-10 h-10 rounded-md" src={productImage} alt="" />
+                <div>
+                    {brand} <br />{modelName}
+                </div>
+            </td>
+            <td>${price}</td>
+            <td>
+                <div className="btn2">
+                    <FaTrash></FaTrash>
+                </div>
+            </td>
+        </tr>
     )
 }
 

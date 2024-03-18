@@ -2,25 +2,31 @@ import { useState } from "react"
 import Header from "./components/header/Header"
 import Products from "./components/products/Products"
 import CartProducts from "./components/cart_container/CartProducts"
+import { ToastContainer, toast } from "react-toastify"
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const [cartCount, setCartCount] = useState(0)
   const [cartProducts, setCartProducts] = useState([])
 
 
 
   function handleAddToCart(laptop) {
-    const updateCart = cartCount + 1;
-    setCartCount(updateCart)
     const updateCartProducts = [...cartProducts, laptop]
-    setCartProducts(updateCartProducts)
 
+    const isExist = cartProducts.find(product => product.id === laptop.id)
+    // console.log(isExist)
+    if (isExist) {
+      toast.info('this product already exist in the cart')
+    } else {
+      setCartProducts(updateCartProducts)
+    }
   }
 
   return (
     <>
-      <Header cartCount={cartCount}></Header>
+      <Header cartProducts={cartProducts}></Header>
+      <ToastContainer theme="dark"/>
       <div className="container">
         <Products handleAddToCart={handleAddToCart}></Products>
         <CartProducts cartProducts={cartProducts}></CartProducts>

@@ -1,6 +1,7 @@
 [
     {
         "modelName": "MacBook Air M2",
+        "id": 1,
         "brand": "Apple",
         "price": 1199.00,
         "processor": "Apple M2 chip",
@@ -10,6 +11,7 @@
     },
     {
         "modelName": "MacBook Pro 14 (M1 Pro)",
+        "id": 2,
         "brand": "Apple",
         "price": 1999.00,
         "processor": "Apple M1 Pro chip",
@@ -19,6 +21,7 @@
     },
     {
         "modelName": "MacBook Pro 16 (M1 Max)",
+        "id": 3,
         "brand": "Apple",
         "price": 3499.00,
         "processor": "Apple M1 Max chip",
@@ -28,6 +31,7 @@
     },
     {
         "modelName": "Mac mini M2",
+        "id": 4,
         "brand": "Apple",
         "price": 699.00,
         "processor": "Apple M2 chip",
@@ -37,6 +41,7 @@
     },
     {
         "modelName": "13-inch MacBook Pro (M2)",
+        "id": 5,
         "brand": "Apple",
         "price": 1299.00,
         "processor": "Apple M2 chip",

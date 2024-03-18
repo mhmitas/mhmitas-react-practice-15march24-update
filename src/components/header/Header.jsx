@@ -1,4 +1,4 @@
-export default function Header({cartCount}){
+export default function Header({cartProducts}){
     return (
         <div className="header">
             <h3>Lets Practice</h3>
@@ -9,7 +9,7 @@ export default function Header({cartCount}){
             </ul>
             <div>
                 <div className="side-logo">
-                    <span>{cartCount}</span>
+                    <span>{cartProducts.length}</span>
                 </div>
             </div>
         </div>

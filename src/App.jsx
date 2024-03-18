@@ -27,7 +27,7 @@ function App() {
     <>
       <Header cartProducts={cartProducts}></Header>
       <ToastContainer theme="dark"/>
-      <div className="container">
+      <div className="container-c">
         <Products handleAddToCart={handleAddToCart}></Products>
         <CartProducts cartProducts={cartProducts}></CartProducts>
       </div>

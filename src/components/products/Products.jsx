@@ -14,7 +14,7 @@ export default function Products({ handleAddToCart, }) {
     // console.log(laptops)
 
     return (
-        <div className="product-container grid md:grid-cols-3 gap-2 ">
+        <div className="product-container grid grid-cols-2 md:grid-cols-3 gap-2 ">
             {
                 laptops.map(
                     (laptop, idx) => <Product

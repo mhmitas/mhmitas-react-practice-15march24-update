@@ -39,10 +39,10 @@ body {
   list-style: none;
 }
 
-.container {
+.container-c {
   display: flex;
   gap: 10px;
-  margin: 50px auto;
+  /* margin: 50px auto; */
 }
 
 .align-center {
